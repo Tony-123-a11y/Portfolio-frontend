@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import 'tailwindcss';
+
+@theme{
+  --font-primary:'inter';
+  --animate-touch:gradient 2s linear infinite;
+  --animate-shine:moveForever 1.2s linear  infinite;
+
+}
+@keyframes moveForever {
+  from{
+    left: 0;
+  }
+  to{
+    left: 200%;
+  }
+}
+
+@keyframes gradient {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+100%{
+  opacity: 0;
+}
+}
+.arrow{
+  animation: dance 2s ease-out infinite;
+}
+
+.home{
+  animation: light 1.3s ease-out forwards;
+}
+@keyframes light {
+ from{
+  background-color: black;
+ }
+  to{
+    background-color: white;
+  }
+}
+.conic{
+  background: conic-gradient(from 45deg at 80% 40%,rgba(0, 0, 0, 0.15),rgba(255, 255, 255, 0.468));
+  background-size: 150% 250%;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: zoom 1.3s ease-out forwards;
+}
+@keyframes zoom {
+ 
+  to{
+    background-size:100% 100%;
+  }
+}
+
+@keyframes dance {
+ 0%{
+   transform: translateY(0);
+ }
+ 50%{
+   transform: translateY(30px);
+ }
+ 100%{
+  transform: translateY(0);
+ }
+}
+
+.loader {
+  color: #fff;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.3s infinite linear;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 
+    2em -2em 0 0em, 3em 0 0 -1em, 
+    2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 -1em, -3em 0 0 -1em, 
+    -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+    3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 -1em, -3em 0 0 -1em, 
+    -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 
+    2em -2em 0 0, 3em 0 0 0.2em, 
+    2em 2em 0 0, 0 3em 0 -1em, 
+    -2em 2em 0 -1em, -3em 0 0 -1em, 
+    -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+     3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+     -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+     3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+     -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+     3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+     -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+    3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+
+.success {
+  position: relative;
+  width: 40px;
+  height: 60px;
+  animation: heartBeat 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.success:before,
+.success:after {
+  content: "";
+  background: #e9714deb ;
+  width: 40px;
+  height: 60px;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(45deg);
+  transform-origin: 50% 68%;
+  box-shadow: 5px 4px 5px #0004 inset;
+}
+.success:after {
+  transform: rotate(-45deg);
+}
+@keyframes heartBeat {
+  0% { transform: scale(0.95) }
+  5% { transform: scale(1.1) }
+  39% { transform: scale(0.85) }
+  45% { transform: scale(1) }
+  60% { transform: scale(0.95) }
+  100% { transform: scale(0.9) }
+}
+      
+  
