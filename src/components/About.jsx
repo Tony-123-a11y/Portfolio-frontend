@@ -40,7 +40,7 @@ const About = () => {
             {/* image content */}
             <div>
                 <div className='w-110 h-110 rounded-full border shadow-2xl border-gray-300 max-lg:w-80 max-lg:h-80'>
-                  <img src="/src/assets/dp.webp" alt=""  className='h-full w-full rounded-full '/>
+                  <img src="dp.webp" alt=""  className='h-full w-full rounded-full '/>
                 </div>
             </div>
         </div>

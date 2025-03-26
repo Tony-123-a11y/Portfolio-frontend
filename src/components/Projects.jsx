@@ -11,25 +11,25 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
   let arr=[
     {
-      thumbnail:'/src/assets/Evara.png',
+      thumbnail:'Evara.png',
       title:'Luxury Jwellery Website',
       description:'A fully responsive jwellery online platform built with React.js and Tailwind CSS. Features include product filtering, cart functionality, and user authentication.',
       technology:['HTML','Javascript','CSS','React','Tailwindcss','Redux','Vite']
     },
     {
-      thumbnail:'/src/assets/netflix.png',
+      thumbnail:'netflix.png',
       title:'Netflix Clone',
       description:'A fully responsive Netflix clone built with HTML and CSS. Project includes attention to details of every section of original Netflix website',
       technology:['HTML','CSS']
     },
     {
-      thumbnail:'/src/assets/spectral.png',
+      thumbnail:'spectral.png',
       title:'Spectral Dummy Website',
       description:'A fully responsive website built with HTML and  CSS. Project includes animations and basic CSS properties',
       technology:['HTML','Javascript','CSS','React','Tailwindcss','Redux']
     },
     {
-      thumbnail:'/src/assets/Evara.png',
+      thumbnail:'Evara.png',
       title:'Luxury Jwellery Website',
       description:'A fully responsive jwellery online platform built with React.js and Tailwind CSS. Features include product filtering, cart functionality, and user authentication.',
       technology:['HTML','Javascript','CSS','React','Tailwindcss','Redux']
