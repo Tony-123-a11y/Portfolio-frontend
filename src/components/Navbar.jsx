@@ -57,7 +57,7 @@ id:'contact'
          <div className="flex justify-between items-center text-black ">
              <h1 className='font-extrabold uppercase text-2xl'>portfo<span className='text-red-400 italic'>lio</span></h1>
              <div onClick={()=> setshowNav(!showNav)} className='flex cursor-pointer flex-col items-center justify-center gap-1.5  w-8 h-8 lg:hidden'>
-              <span style={{transform:(showNav && 'rotate(45deg) translate(10px)')}} className=' transition duration-300 w-full h-[1.5px] bg-black '></span>
+              <span style={{transform:(showNav && 'rotate(45deg) translate(11px)')}} className=' transition duration-300 w-full h-[1.5px] bg-black '></span>
               <span style={{transform:(showNav && 'translateX(50px)')}} className=' transition duration-150 w-full h-[1.5px] bg-black '></span>
               <span style={{transform:(showNav && 'rotate(-45deg) translate(9px')}} className=' transition duration-300 w-full h-[1.5px] bg-black '></span>
              </div>

@@ -50,7 +50,8 @@ transition={{
 </svg>
 
       <button onClick={()=>goToSection('about')} className=' arrow absolute bottom-20 left-1/2 -translate-x-1/2 p-2 hover:bg-gray-300 cursor-pointer transition duration-200 rounded-md z-20'><MdOutlineArrowDownward fontSize={25} /></button>
-      <div className="conic absolute w-full h-full left-0 top-0 "></div>
+      <div className="conic absolute w-full h-full left-0 top-0 max-sm:hidden"></div>
+      <div className="conicSmall absolute w-full h-full left-0 top-0 "></div>
       <div className="container xl:max-w-[1200px]  px-6 mx-auto max-sm:px-4">
     <div className='relative z-10  text-center  '>
     <h1 className='font-bold text-6xl text-black tracking-tight max-lg:text-5xl  max-sm:text-4xl leading-12'>Hello, I'm <br className='sm:hidden'/>Ayush Singh</h1>
