@@ -8,7 +8,11 @@ let arr=[
 'React',
 'Redux',
 'Framer motion',
-'Tailwind CSS',
+'Tailwind CSS',,
+'Node.JS',
+'Express.JS',
+'MongoDB',
+'Mongoose'
 ]
 
 const About = () => {
@@ -21,10 +25,10 @@ const About = () => {
             {/* text content */}
             <div className='w-1/2 max-md:order-1 max-md:w-full max-md:text-justify'>
             <p className=' tracking-wide leading-7'>
-            I am a passionate and detail-oriented front-end web developer eager to kickstart my career in crafting visually appealing and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I enjoy transforming designs into responsive, interactive experiences that enhance user satisfaction.
+            I am a passionate and detail-oriented front-end web developer eager to kickstart my career in crafting visually appealing and user-friendly websites. 
                </p>
                 <p className=' tracking-wide leading-7 mt-5'>
-                As a recent graduate (or self-taught enthusiast), I’ve worked on personal projects to hone my skills in modern frameworks like React and Tailwind CSS, while staying updated with the latest web development trends. I’m excited to collaborate with teams, solve real-world challenges, and contribute to building seamless digital solutions.
+                As a recent graduate (or self-taught enthusiast), I’ve worked on personal projects to hone my skills in modern frameworks like React and Tailwind CSS, while staying updated with the latest web development trends.
             </p>
             <div className='flex items-center justify-start gap-3 flex-wrap mt-6'>
                 {

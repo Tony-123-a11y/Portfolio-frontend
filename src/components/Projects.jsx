@@ -13,26 +13,34 @@ const Projects = () => {
     {
       thumbnail:'Evara.png',
       title:'Luxury Jwellery Website',
-      description:'A fully responsive jwellery online platform built with React.js and Tailwind CSS. Features include product filtering, cart functionality, and user authentication.',
-      technology:['HTML','Javascript','CSS','React','Tailwindcss','Redux','Vite']
+      description:'A fully responsive jwellery online platform built with React.JS and Tailwind CSS. Features include product filtering, cart functionality, and user authentication.',
+      technology:['HTML','Javascript','CSS','React.JS','Tailwindcss','Redux','Vite'],
+      liveLink:'',
+      gitLink:''
     },
     {
-      thumbnail:'netflix.png',
-      title:'Netflix Clone',
-      description:'A fully responsive Netflix clone built with HTML and CSS. Project includes attention to details of every section of original Netflix website',
-      technology:['HTML','CSS']
+      thumbnail:'calc.png',
+      title:'Calculator',
+      description:'A fully responsive calculator web app built with HTML and CSS and Javascript. This calculator can perform various arithmetic operations with a click!',
+      technology:['HTML','CSS','Javascript'],
+      liveLink:'https://calculator-rho-rose-52.vercel.app/',
+      gitLink:'https://github.com/Tony-123-a11y/calculator'
     },
     {
-      thumbnail:'spectral.png',
-      title:'Spectral Dummy Website',
-      description:'A fully responsive website built with HTML and  CSS. Project includes animations and basic CSS properties',
-      technology:['HTML','Javascript','CSS','React','Tailwindcss','Redux']
+      thumbnail:'lifeTracker.png',
+      title:'Life Tracker',
+      description:'A fully responsive website built with React.js and Tailwind CSS. Project includes a task list with features like adding , completing and deleting tasks and a expense tracker for adding, deleting and updating expenses.',
+      technology:['HTML','Javascript','Tailwind CSS','React.JS','Tailwindcss'],
+      liveLink:'https://life-tracker-one.vercel.app/',
+      gitLink:'https://github.com/Tony-123-a11y/Life-tracker'
     },
     {
-      thumbnail:'Evara.png',
-      title:'Luxury Jwellery Website',
-      description:'A fully responsive jwellery online platform built with React.js and Tailwind CSS. Features include product filtering, cart functionality, and user authentication.',
-      technology:['HTML','Javascript','CSS','React','Tailwindcss','Redux']
+      thumbnail:'e-commerce.png',
+      title:'E-commerce Platform',
+      description:'A fully responsive E-commerce  platform built with React.JS and Tailwind CSS and Vite. Features include product filtering, cart functionality, and search functionality,wishlist, data pagination.',
+      technology:['HTML','Javascript','CSS','React.JS','Tailwindcss','Redux','Framer motion','react-slick'],
+      liveLink:'https://e-commerce-plum-ten-99.vercel.app/',
+      gitLink:'https://github.com/Tony-123-a11y/e-commerce'
     },
   ]
 
@@ -91,11 +99,11 @@ const Projects = () => {
                 <p className='text-gray-500 my-5'>{project.description}</p>
                    
                 <div className="flex items-center justify-between">
-                <a href="#" className='flex px-4 py-2 justify-center items-center rounded-md gap-2 border bg-white border-gray-300'> 
+                <a href={project.gitLink} className='flex px-4 py-2 justify-center items-center rounded-md gap-2 border bg-white border-gray-300'> 
                 <LuGithub />
                 <span>Code</span>
                 </a>
-                <a href="#" className='flex px-4 py-2 justify-center bg-black text-white rounded-md items-center gap-2 relative overflow-hidden'>
+                <a href={project.liveLink} className='flex px-4 py-2 justify-center bg-black text-white rounded-md items-center gap-2 relative overflow-hidden'>
                  <div className="absolute left-0 top-0 w-5 h-full -skew-12 bg-gradient-to-r from-transparent via-white opacity-50 to-transparent animate-shine"></div>
                 <GrShare />
                 <span >Live demo</span>
