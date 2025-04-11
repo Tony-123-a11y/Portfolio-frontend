@@ -8,7 +8,7 @@ import { LuGithub } from "react-icons/lu";
 import { GrShare } from "react-icons/gr";
 import Heading from './Heading';
 import { Link } from 'react-router-dom';
-const Projects = () => {
+const Projects = ({setshowNav}) => {
   let arr=[
     {
       thumbnail:'Evara.png',
@@ -81,13 +81,13 @@ const Projects = () => {
             <Slider {...settings}>
             {
               arr.map((project,i)=>{
-              return  <div key={i} className=' font-primary mt-15 max-sm:mt-10 bg-gray-50 border border-gray-300 rounded-md h-170 max-md:h-175 max-sm:h-172'>
+              return  <div key={i} className=' font-primary mt-15 max-sm:mt-10 bg-gray-50 border border-gray-300 rounded-md h-170 max-md:h-175 max-sm:h-182'>
                 {/* image content */}
                 <div className='h-100 rounded-t-md max-md:h-90 max-sm:h-70'>
                     <img src={project.thumbnail} alt="" className='bg-black w-full h-full rounded-t-md object-cover object-top max-sm:object-contain max-sm:object-center' />
                 </div>
                 {/* text content */}
-                <div className="p-6 mt-2">
+                <div className="p-6 mt-2 max-sm:p-3 tracking-wide">
                 <h1 className='text-2xl font-semibold capitalize'>{project.title}</h1>
                 <ul className='flex gap-2 mt-4 flex-wrap'>
                      {
@@ -117,7 +117,7 @@ const Projects = () => {
          </Slider>
            
         </div>
-        <Link to='/' className='px-4 py-2  capitalize bg-black border text-white rounded-md mt-15 block text-center hover:bg-white transition duration-200 hover:text-black max-sm:max-w-full max-w-40 m-auto'>View all projects</Link>
+        <Link to='/allprojects' className='px-4 py-2  capitalize bg-black border text-white rounded-md mt-15 block text-center hover:bg-white transition duration-200 hover:text-black max-sm:max-w-full max-w-40 m-auto'>View all projects</Link>
         </div>
         </div>
     </div>

@@ -2,17 +2,11 @@
 import React from 'react'
 import Heading from './Heading'
 let arr=[
-  'HTML',
-  'CSS',
-    'JavaScript',
-'React',
-'Redux',
-'Framer motion',
-'Tailwind CSS',,
-'Node.JS',
-'Express.JS',
+'React,js',
+'Express.js',
 'MongoDB',
-'Mongoose'
+'Tailwind CSS',
+'Node.JS'
 ]
 
 const About = () => {

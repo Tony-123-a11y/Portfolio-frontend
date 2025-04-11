@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import Heading from './Heading'
-import { MdCode,MdOutlineColorLens } from "react-icons/md";
+import { MdCode } from "react-icons/md";
+import { FaLaptopCode } from "react-icons/fa";
 import { AiOutlineTool } from "react-icons/ai";
 import { motion } from 'motion/react';
 import { CgPerformance } from "react-icons/cg";
-import { GoLightBulb } from "react-icons/go";
+import { FaConnectdevelop } from "react-icons/fa6";
 import { GoStack } from "react-icons/go";
 
 const Skills = () => {
@@ -16,8 +17,8 @@ const Skills = () => {
           logo:<MdCode fontSize={20} />
       },
       {
-          title:'design',
-          logo:<MdOutlineColorLens fontSize={20} />
+          title:'Backend',
+          logo:<FaLaptopCode fontSize={20} />
       },
       {
           title:'tools',
@@ -36,29 +37,29 @@ const Skills = () => {
         barWidth:'95'
       },
       {
-        name:'React.js',
+        name:'React.JS',
         barWidth:'85'
       },
       {
-        name:'Tailwindcss',
+        name:'Tailwind CSS',
         barWidth:'80'
       }
     ],
     [
       {
-        name:'UI/UX',
+        name:'Express.JS',
         barWidth:'86'
       },
       {
-        name:'Figma',
+        name:'MongoDB',
         barWidth:'70'
       },
       {
-        name:'Color palettes',
+        name:'Node.JS',
         barWidth:'87'
       },
       {
-        name:'Font understanding',
+        name:'APIs',
         barWidth:'75'
       }
     ],
@@ -92,8 +93,8 @@ const Skills = () => {
       logo:<CgPerformance fontSize={30}  />
     },
     {
-      title:'problem solving',
-      logo:<GoLightBulb fontSize={30}  />
+      title:'API intergration',
+      logo:<FaConnectdevelop fontSize={30}  />
     },
     {
       title:'clean code',
@@ -130,7 +131,7 @@ const Skills = () => {
                               {
                                 skills[current].map((skill,i)=>{
                                  return <li key={i} className='mt-3'>
-                                  <div className="flex justify-between "><h2 className='max-sm:text-sm text-lg'>{skill.name}</h2> <span>{`${skill.barWidth}%`}</span></div>
+                                  <div className="flex justify-between "><h2 className='max-sm:text-sm text-lg max-sm:font-semibold'>{skill.name}</h2> <span>{`${skill.barWidth}%`}</span></div>
                                   <div className='h-2 bg-gray-300 rounded-lg mt-1'>
                                     <motion.div
                                     initial={{width:0}}

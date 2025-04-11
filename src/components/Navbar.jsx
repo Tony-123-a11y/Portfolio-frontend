@@ -37,16 +37,7 @@ id:'contact'
   }
   return (
   
-    <motion.div 
-    initial={{
-      translateY:-100,
-      opacity:0
-      
-    }}
-    animate={{
-      translateY:0,
-      opacity:1
-    }}
+    <div 
     className='sticky left-0 top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm'>
       {
         (showNav &&  <SideNav/>)
@@ -74,7 +65,7 @@ id:'contact'
          </div>
       </div>
       </nav>
-    </motion.div>
+    </div>
   )
 }
 
