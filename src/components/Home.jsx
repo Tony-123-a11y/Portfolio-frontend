@@ -58,7 +58,7 @@ transition={{
     <h4 className='font-medium text-4xl text-gray-800 my-5 max-lg:text-3xl max-sm:text-2xl max-sm:my-4'>Full-Stack Developer</h4>
     <p className='text-2xl font-normal text-gray-900 max-lg:text-xl max-sm:text-lg'>I build responsive, accessible, and performant web experiences</p>
     <div className="flex justify-center  gap-4 mt-8 max-sm:justify-start">
-      <button className='text-base flex items-center justify-center gap-2 text-black cursor-pointer px-7 py-3 bg-white capitalize font-medium tracking-wide rounded-md hover:bg-white/80  transition duration-200 max-sm:text-sm'><MdDownload fontSize={20}/> <span>resume</span> </button>
+      <a href="AyushResume.pdf"  download className='text-base flex items-center justify-center gap-2 text-black cursor-pointer px-7 py-3 bg-white capitalize font-medium tracking-wide rounded-md hover:bg-white/80  transition duration-200 max-sm:text-sm'><MdDownload fontSize={20}/> <span>resume</span> </a>
       <button onClick={()=>goToSection('contact')} className='text-base text-white cursor-pointer px-7 py-3  bg-gradient-to-br from-pink-500 to-blue-500 capitalize font-medium tracking-wide rounded-md  duration-200 relative group max-sm:text-sm
       after:content-[""] after:w-full after:h-full after:absolute  after:rounded-md after:left-0 after:top-0 after:bg-gradient-to-l after:from-pink-500 after:to-blue-500 after:animate-touch after:hover:animate-none
       '> <span className='relative z-10'>get in touch</span> </button>
