@@ -42,6 +42,14 @@ const Projects = ({setshowNav}) => {
       liveLink:'https://e-commerce-plum-ten-99.vercel.app/',
       gitLink:'https://github.com/Tony-123-a11y/e-commerce'
     },
+    {
+      thumbnail:'weather.png',
+      title:'Weather App',
+      description:'A  responsive weather app built with React.JS and Tailwind CSS and Vite , based on entered city it can give you data of sea level, humidity, wind speed, pressure, sunrise, etc. Bulid with dark and light mode feauture with smooth animations',
+      technology:['HTML','Javascript','CSS','React.JS','Tailwindcss','API','Framer motion'],
+      liveLink:'https://weather-app-nine-gilt-52.vercel.app/',
+      gitLink:'https://github.com/Tony-123-a11y/Weather-app'
+    },
   ]
 
   const ArrowLeft=({onClick})=>{

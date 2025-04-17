@@ -9,7 +9,7 @@ const Home = () => {
       document.getElementById(id).scrollIntoView({behavior:'smooth', block:'start'})            
   }
   return (
-    <div id='home' className='home bg-fixed  bg-cover relative flex items-center bg-black justify-center h-[calc(92vh-74px)] '>
+    <div id='home' className='home bg-fixed   bg-cover relative flex items-center bg-black justify-center h-[calc(92vh-74px)] '>
        <svg className=" h-20 w-[100%] max-sm:h-10 absolute  left-0 bottom-0 z-40 " xmlns="http://www.w3.org/2000/svg" xmlns:href="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
   <defs>
     <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
