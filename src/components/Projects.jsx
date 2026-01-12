@@ -10,22 +10,44 @@ import Heading from './Heading';
 import { Link } from 'react-router-dom';
 const Projects = ({setshowNav}) => {
   let arr=[
-    {
-      thumbnail:'Evara.png',
-      title:'Luxury Jwellery Website',
-      description:'A fully responsive jwellery online platform built with React.JS and Tailwind CSS. Features include product filtering, cart functionality, and user authentication.',
-      technology:['HTML','Javascript','CSS','React.JS','Tailwindcss','Redux','Vite'],
-      liveLink:'',
-      gitLink:''
-    },
-    {
-      thumbnail:'calc.png',
-      title:'Calculator',
-      description:'A fully responsive calculator web app built with HTML and CSS and Javascript. This calculator can perform various arithmetic operations with a click!',
-      technology:['HTML','CSS','Javascript'],
-      liveLink:'https://calculator-rho-rose-52.vercel.app/',
-      gitLink:'https://github.com/Tony-123-a11y/calculator'
-    },
+  
+{
+  thumbnail: 'Talkies.png',
+  title: 'WebRTC Real-Time Communication Application',
+  description:
+    'A peer-to-peer WebRTC-based audio and video calling application with screen sharing support. The project includes secure user authentication (signup, login, password recovery) with one-day session management, Google OAuth integration, and real-time signaling using Socket.io.',
+  technology: [
+    'React.js',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'WebRTC',
+    'Socket.io',
+    'Twilio TURN',
+    'Framer Motion'
+  ],
+  liveLink: 'https://talk-trackr-nc2n.vercel.app/',
+  gitLink: 'https://github.com/Tony-123-a11y/TalkTrackr/tree/main'
+},
+{
+  thumbnail: 'MilanSangam.png',
+  title: 'Matrimonial Web Application',
+  description:
+    'A full-stack matrimonial web application developed for a client, featuring user profile management, intelligent profile matching, advanced search, real-time messaging, and request-based interactions between users.  The project includes more than 13 fully responsive pages for detailed user information display and management.',
+  technology: [
+    'React.js',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'JWT',
+    'Nodemailer'
+  ],
+  duration: 'Sept 2025 - Present',
+  liveLink: 'https://your-live-link.vercel.app',
+  gitLink: 'https://github.com/your-github-username/matrimonial-web-app'
+}
+,
+
     {
       thumbnail:'lifeTracker.png',
       title:'Life Tracker',

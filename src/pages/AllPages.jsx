@@ -11,13 +11,13 @@ const AllPages = ({setshowNav}) => {
     }, [])
     
   return (
-    <div>
+    <>
       <Home/>
       <About/>
       <Skills/>
       <Projects setshowNav={setshowNav}/>
       <Contact/>
-    </div>
+    </>
   )
 }
 

@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import React from 'react'
 import { MdDownload,MdOutlineArrowDownward } from "react-icons/md";
+import Shuffle from './Shuffle';
 
 
 const Home = () => {
@@ -54,7 +55,19 @@ transition={{
       <div className="conicSmall absolute w-full h-full left-0 top-0 sm:hidden"></div>
       <div className="container xl:max-w-[1200px]  px-6 mx-auto max-sm:px-4">
     <div className='relative z-10  text-center  max-sm:text-start'>
-    <h1 className='font-bold text-6xl text-black tracking-tight max-lg:text-5xl  max-sm:text-4xl leading-12'>Hello, I'm Ayush <br className='sm:hidden'/> Singh</h1>
+  <Shuffle
+  text="Ayush Singh"
+  shuffleDirection="right"
+  duration={0.35}
+  animationMode="evenodd"
+  shuffleTimes={1}
+  ease="power3.out"
+  stagger={0.03}
+  threshold={0.1}
+  triggerOnce={true}
+  triggerOnHover={true}
+  respectReducedMotion={true}
+/>
     <h4 className='font-medium text-4xl text-gray-800 my-5 max-lg:text-3xl max-sm:text-2xl max-sm:my-4'>Full-Stack Developer</h4>
     <p className='text-2xl font-normal text-gray-900 max-lg:text-xl max-sm:text-lg'>I build responsive, accessible, and performant web experiences</p>
     <div className="flex justify-center  gap-4 mt-8 max-sm:justify-start">

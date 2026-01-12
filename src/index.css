@@ -3,6 +3,7 @@
 @import 'tailwindcss';
 
 @theme{
+  --color-primary: #170d27;
   --font-primary:'inter';
   --animate-touch:gradient 2s linear infinite;
   --animate-shine:moveForever 1.2s linear  infinite;
