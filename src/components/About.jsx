@@ -2,7 +2,7 @@
 import React from 'react'
 import Heading from './Heading'
 let arr=[
-'React,js',
+'React.js',
 'Express.js',
 'MongoDB',
 'Tailwind CSS',
@@ -38,7 +38,7 @@ const About = () => {
             {/* image content */}
             <div>
                 <div className='w-110 h-110 rounded-full border shadow-2xl border-gray-300 max-lg:w-80 max-lg:h-80'>
-                  <img src="DP.jpeg" alt=""  className='h-full w-full rounded-full'/>
+                  <img src="DP.jpeg" alt=""  className='h-full w-full object-cover object-top rounded-full'/>
                 </div>
             </div>
         </div>
