@@ -20,14 +20,14 @@ const About = () => {
             <div className='w-1/2 max-md:order-1 max-md:w-full max-md:text-justify'>
            <p>
     I’m a <strong>Front-End / MERN Web Developer</strong> who helps businesses build
-    <strong>modern, responsive, and user-friendly websites</strong> with clean design and smooth performance.
+    <strong> modern, responsive, and user-friendly websites</strong> with clean design and smooth performance.
     I focus on creating interfaces that look professional and work perfectly on every screen.
   </p>
 
   <p>
     I work with <strong>React</strong> and <strong>Tailwind CSS</strong> for fast and scalable UI, and I can also integrate
-    <strong>APIs</strong> and build full-stack features using <strong>Node.js</strong>, <strong>Express</strong>, and
-    <strong>MongoDB</strong>. My goal is to deliver <strong>high-quality, maintainable code</strong> that brings real value
+    <strong> APIs</strong> and build full-stack features using <strong>Node.js</strong>, <strong>Express</strong>, and
+    <strong> MongoDB</strong>. My goal is to deliver <strong>high-quality, maintainable code</strong> that brings real value
     to your project.
   </p>
             <div className='flex items-center justify-start gap-3 flex-wrap mt-6'>
