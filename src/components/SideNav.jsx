@@ -4,7 +4,7 @@ import { easeIn, motion } from 'motion/react'
 import { easeOut } from 'motion'
 
 
-const SideNav = () => {
+const SideNav = ({setshowNav}) => {
   let arr=[
     {
     title:'Home',
@@ -63,7 +63,9 @@ const SideNav = () => {
        <ul className='text-center py-6 space-y-1'>
        {
               arr.map((ele,i)=>{
-               return  <li key={i} onClick={()=>goToSection(ele.id)} className='px-5 shadow-sm  py-3 cursor-pointer relative capitalize '>{ele.title}</li>
+               return  <li key={i} onClick={()=>{goToSection(ele.id)
+                setshowNav(false)
+               }} className='px-5 shadow-sm  py-3 cursor-pointer relative capitalize '>{ele.title}</li>
               })
             }
             </ul>

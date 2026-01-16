@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import SideNav from './SideNav';
-import { motion } from 'motion/react';
+
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
@@ -40,7 +40,7 @@ id:'contact'
     <div 
     className='sticky left-0 top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm'>
       {
-        (showNav &&  <SideNav/>)
+        (showNav &&  <SideNav setshowNav={setshowNav}/>)
       }
        
         <nav className='py-3  border-b-gray-300 font-primary  '>
