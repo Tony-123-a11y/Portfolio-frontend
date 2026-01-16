@@ -18,12 +18,18 @@ const About = () => {
         <div className="flex items-center font-primary  justify-between gap-15 mt-15  max-md:flex-col max-sm:gap-10 max-sm:mt-10">
             {/* text content */}
             <div className='w-1/2 max-md:order-1 max-md:w-full max-md:text-justify'>
-            <p className=' tracking-wide leading-7'>
-            I am a passionate and detail-oriented front-end web developer eager to kickstart my career in crafting visually appealing and user-friendly websites. 
-               </p>
-                <p className=' tracking-wide leading-7 mt-5'>
-                As a recent graduate (or self-taught enthusiast), I’ve worked on personal projects to hone my skills in modern frameworks like React and Tailwind CSS, while staying updated with the latest web development trends.
-            </p>
+           <p>
+    I’m a <strong>Front-End / MERN Web Developer</strong> who helps businesses build
+    <strong>modern, responsive, and user-friendly websites</strong> with clean design and smooth performance.
+    I focus on creating interfaces that look professional and work perfectly on every screen.
+  </p>
+
+  <p>
+    I work with <strong>React</strong> and <strong>Tailwind CSS</strong> for fast and scalable UI, and I can also integrate
+    <strong>APIs</strong> and build full-stack features using <strong>Node.js</strong>, <strong>Express</strong>, and
+    <strong>MongoDB</strong>. My goal is to deliver <strong>high-quality, maintainable code</strong> that brings real value
+    to your project.
+  </p>
             <div className='flex items-center justify-start gap-3 flex-wrap mt-6'>
                 {
                 arr.map((ele,i)=>{
